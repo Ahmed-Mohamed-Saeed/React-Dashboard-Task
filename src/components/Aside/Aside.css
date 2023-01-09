@@ -1,0 +1,124 @@
+aside {
+    width: 18.5%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-left: 24px;
+    background-color: #fff;
+}
+
+
+.logo {
+    margin-bottom: 43px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #1F2128;
+}
+
+.logo-img {
+    margin-right: 12px;
+}
+
+.logo-text p {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+}
+
+.list {
+    width: 90%;
+    align-items: center;
+    margin-bottom: 25px;
+    padding: 9.5px;
+    cursor: pointer;
+}
+
+.list.active,
+.list:hover {
+    background-color: #F3F5F8;
+    border-radius: 6px;
+}
+
+.list img {
+    margin-right: 8px;
+}
+
+.list p {
+    color: #5F6165;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 18px;
+}
+
+.list a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #5F6165;
+}
+
+@media all and (max-width: 575px) {
+    .list a {
+        display: none;
+    }
+}
+
+@media all and (max-width: 575px) {
+    aside {
+        padding-left: 5px;
+        align-items: center;
+    }
+    aside p {
+        display: none;
+    }
+    .logo {
+        flex-direction: column;
+    }
+    .logo-img {
+        margin-right: 0px;
+    }
+    .list {
+        flex-direction: column;
+    }
+}
+
+
+
+@media all and (min-width: 576px) and (max-width: 767px) {
+    aside {
+        padding-left: 8px;
+    }
+    .logo-text p {
+        font-size: 18px;
+    }
+    .list {
+        width: 95%;
+    }
+    .list p {
+        font-size: 10px;
+    }
+}
+
+
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+    aside {
+        padding-left: 8px;
+    }
+    .list {
+        width: 90%;
+    }
+}
+
+
+
+@media all and (min-width: 992px) and (max-width: 1199px) {
+    aside {
+        padding-left: 12px;
+    }
+    .list {
+        width: 90%;
+    }
+}

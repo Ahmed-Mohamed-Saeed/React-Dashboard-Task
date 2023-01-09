@@ -1,0 +1,322 @@
+:root {
+    --primaryColor: #FF764C;
+    --bs-purple: #A162F7;
+    --bs-blue: #0d6efd;
+    --bs-pink: #efb6b6;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+}
+
+.stats {
+    padding: 30px;
+}
+
+.stats-cards {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+.stats-cards p {
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 31px;
+    color: #000;
+}
+
+.stats-cards .energy,
+.stats-cards .range,
+.stats-cards .fluid,
+.stats-cards .tire {
+    width: 100%;
+    text-align: center;
+    border-radius: 14px;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0px;
+    background-color: #fff;
+}
+
+.fluid:hover {
+    background-color: var(--bs-pink);
+    transition: 0.5s;
+}
+
+
+.range:hover {
+    background-color: var(--bs-orange);
+    transition: 0.5s;
+}
+
+.tire:hover {
+    background-color: var(--bs-purple);
+    transition: 0.5s;
+}
+
+
+
+.stats-cards .energy .energy-logo,
+.stats-cards .range .range-logo,
+.stats-cards .fluid .fluid-logo,
+.stats-cards .tire .tire-logo {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.stats-cards .energy .energy-logo img,
+.stats-cards .range .range-logo img,
+.stats-cards .fluid .fluid-logo img,
+.stats-cards .tire .tire-logo img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.stats-cards .energy p,
+.stats-cards .range p,
+.stats-cards .fluid p,
+.stats-cards .tire p {
+    margin-bottom: 30px;
+}
+
+.stats-cards .energy .chart,
+.stats-cards .range .chart,
+.stats-cards .fluid .chart,
+.stats-cards .tire .chart {
+    width: 112px;
+    height: 112px;
+    position: relative;
+}
+
+.stats-cards .energy .chart p,
+.stats-cards .range .chart p,
+.stats-cards .fluid .chart p,
+.stats-cards .tire .chart p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.stats-cards .energy {
+    background-color: var(--bs-purple);
+}
+
+.stats-cards .energy .energy-logo {
+    background-color: var(--bs-purple);
+}
+
+.stats-cards .range .range-logo {
+    background: rgba(255, 126, 134, 0.1);
+}
+
+.stats-cards .fluid .fluid-logo {
+    background: rgba(161, 98, 247, 0.1);
+}
+
+.stats-cards .tire .tire-logo {
+    background: rgba(246, 204, 13, 0.1);
+}
+
+.stats-cards .energy p {
+    color: #fff;
+}
+
+.stats-cards .range p {
+    color: #000;
+}
+
+
+.bar,
+.car {
+    padding: 15px 35px;
+    background-color: #fff;
+    grid-column: 1/3;
+    border-radius: 14px;
+}
+
+.car {
+    grid-column: 3/5;
+}
+
+.bar .header,
+.car .header {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    color: #242731;
+    margin-bottom: 24px;
+}
+
+.bar .header span,
+.car .header span {
+    font-weight: normal;
+}
+
+.bar .time,
+.car .time {
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.bar .time .date div,
+.car .time .date div {
+    width: 43px;
+    height: 20px;
+    border-radius: 24px;
+    text-align: center;
+    margin-right: 22px;
+    cursor: pointer;
+}
+
+.car .time .date {
+    background-color: #F5F4F6;
+    border-radius: 10px;
+}
+
+.bar .time .date div.active {
+    background-color: #2884FF;
+}
+
+.car .time .date div.active {
+    background-color: var(--primaryColor);
+}
+
+.bar .time .date div p,
+.car .time .date div p {
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 20px;
+    color: #000;
+}
+
+.bar .time .date div.active p,
+.car .time .date div.active p {
+    color: #fff;
+}
+
+.bar .time .time-text p,
+.car .time .car-text p {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: #5F6165;
+}
+
+
+.frames {
+    grid-column: 1/5;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.car-frame {
+    background-color: #E1DFA4;
+    padding: 16.5px 27px;
+    border-radius: 14px;
+}
+
+.car-frame:nth-of-type(2) {
+    background-color: #E3ECF1;
+}
+
+.car-frame:last-of-type {
+    background-color: #F4E3E5;
+}
+
+.car-frame .frame-head {
+    display: flex;
+    margin-bottom: 13px;
+}
+
+.car-frame .frame-head img {
+    margin-right: 12px;
+}
+
+.car-frame .frame-head p {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: #242731;
+}
+
+.car-frame .frame-img {
+    margin-bottom: 11px;
+}
+
+.car-frame .frame-img img {
+    width: 100%;
+}
+
+.car-frame > p {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    color: #1F2128;
+    margin-bottom: 10px;
+}
+
+.car-frame .frame-footer {
+    justify-content: space-between;
+}
+
+.car-frame .frame-footer p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #72767C;
+}
+
+.car-frame .frame-footer div {
+    width: 50%;
+    justify-content: space-between;
+}
+
+
+@media all and (max-width: 575px) {
+    .stats-cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .frames {
+        grid-column: 1/2;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+
+@media all and (max-width: 767px) {
+    .bar,
+    .car,
+    .frame-head img,
+    .frame-footer div {
+        display: none;
+    }
+    .car-frame {
+        padding: 10px 0px;
+    }
+}
+
+
+@media all and (min-width: 576px) and (max-width: 1199px) {
+    .stats-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .frames {
+        grid-column: 1/3;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .bar,
+    .car {
+        grid-column: 1/3;
+    }
+
+}

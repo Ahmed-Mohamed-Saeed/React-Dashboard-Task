@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "DMSans";
+    src: url("../public/assets/fonts/DMSans-Regular.ttf");
+}
+
+.app {
+    font-family: DMSans, sans-serif;
+    gap: 1px;
+    background-color: #F5F5F5;
+}
+
+.body {
+    width: 84.5%;
+}

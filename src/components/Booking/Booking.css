@@ -1,0 +1,180 @@
+.booking {
+    padding: 24px;
+}
+
+.booking .header {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 39px;
+    color: #242731;
+    margin-bottom: 34px;
+}
+
+/* Cards */
+
+.spin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.booking .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.booking .cards .card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 16px;
+}
+
+.booking .cards .card .card-header {
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4.5px;
+}
+
+.booking .cards .card .card-header p {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    color: #242731;
+}
+
+.booking .cards .card .card-header img {
+    cursor: pointer;
+}
+
+.booking .cards .card .model {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #72767C;
+    margin-bottom: 18px;
+}
+
+.booking .cards .card .card-img {
+    text-align: center;
+    margin-bottom: 22px;
+    max-width: 270px;
+}
+
+.booking .cards .card .card-img img {
+    width: 100%;
+}
+
+.booking .cards .card .card-footer {
+    align-items: center;
+}
+
+.booking .cards .card .card-footer .user,
+.booking .cards .card .card-footer .type {
+    align-items: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #72767C;
+}
+
+.booking .cards .card .card-footer .user {
+    margin-right: 19.67px;
+}
+
+.booking .cards .card .card-footer .user img {
+    margin-right: 5.75px;
+}
+
+.booking .cards .card .card-footer .type {
+    margin-right: 81px;
+}
+
+.booking .cards .card .card-footer .type img {
+    margin-right: 6.7px;
+}
+
+.booking .cards .card .card-footer .price p {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    color: #242731;
+}
+
+.booking .cards .card .card-footer .price p span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #72767C;
+}
+
+
+
+@media all and (max-width: 1199px) {
+    .booking {
+        padding: 10px;
+    }
+    .booking .header {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    .booking .cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .booking .cards .card {
+        padding: 10px 0px;
+    }
+    .booking .cards .card p {
+        text-align: center;
+    }
+    .booking .cards .card .card-header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .booking .cards .card .card-header p {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    .booking .cards .card .model {
+        font-size: 12px;
+    }
+    .booking .cards .card .card-img {
+        max-width: 70%;
+        margin-left: 15%;
+    }
+    .booking .cards .card .card-img img {
+        width: 100%;
+    }
+    .booking .cards .card .card-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .booking .cards .card .card-footer .user,
+    .booking .cards .card .card-footer .type {
+        margin-bottom: 10px;
+    }
+    .booking .cards .card .card-footer .type {
+        margin-right: 0px;
+    }
+    .booking .cards .card .card-footer .price p {
+        font-size: 16px;
+    }
+}
+
+
+@media all and (min-width: 576px) and (max-width: 991px) {
+    .booking .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media all and (min-width: 992px) and (max-width: 1211px) {
+    .booking .cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
