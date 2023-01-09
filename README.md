@@ -1,7 +1,6 @@
-Dashbord Task
+# Car-Dashboard-Task
 
 
-How to run
-
+## How to run
 npm install
 npm start
